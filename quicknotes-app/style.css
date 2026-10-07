@@ -1,0 +1,326 @@
+/* ==============================
+   Reset
+   ============================== */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* ==============================
+   Base Styles
+   ============================== */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f1f5f9;
+    color: #333;
+}
+
+
+/* ==============================
+   Header
+   ============================== */
+
+header {
+    background-color: #1f4e78;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin: 0 0 8px;
+    font-size: 2.3rem;
+}
+
+header p {
+    margin: 0;
+}
+
+
+/* ==============================
+   Main
+   ============================== */
+
+main {
+    max-width: 700px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+
+/* ==============================
+   Section Cards
+   ============================== */
+
+.section-card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.section-card h2 {
+    margin-top: 0;
+    color: #1f4e78;
+}
+
+
+/* ==============================
+   Form
+   ============================== */
+
+#note-form {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+#search-input:focus {
+    outline: 2px solid #1f4e78;
+}
+
+
+/* ==============================
+   Buttons
+   ============================== */
+
+button {
+    padding: 11px 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1f4e78;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #163a5a;
+    transform: translateY(-2px);
+}
+
+
+/* ==============================
+   Error Message
+   ============================== */
+
+#error-message {
+    color: #dc2626;
+    font-weight: bold;
+    min-height: 24px;
+    margin-bottom: 0;
+}
+
+
+/* ==============================
+   Search
+   ============================== */
+
+.search-area {
+    margin-bottom: 15px;
+}
+
+.search-area label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+#search-input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font: inherit;
+}
+
+
+/* ==============================
+   Note Count
+   ============================== */
+
+#note-count {
+    color: #666;
+    font-weight: bold;
+}
+
+
+/* ==============================
+   Notes List
+   ============================== */
+
+#notes-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+
+/* ==============================
+   Note Cards
+   ============================== */
+
+.note-card {
+    background-color: #fafafa;
+    padding: 18px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.note-card p {
+    margin: 6px 0;
+}
+
+.note-text {
+    font-size: 1.05rem;
+    font-weight: 500;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
+.note-meta {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.category-label {
+    display: inline-block;
+    padding: 3px 8px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+
+/* ==============================
+   Category Styles
+   ============================== */
+
+.category-personal {
+    border-left: 5px solid #008c95;
+}
+
+.category-work {
+    border-left: 5px solid #8b1e1e;
+}
+
+.category-study {
+    border-left: 5px solid #2563eb;
+}
+
+.category-personal .category-label {
+    background-color: #d9f3f4;
+    color: #006b70;
+}
+
+.category-work .category-label {
+    background-color: #f6dddd;
+    color: #7a1717;
+}
+
+.category-study .category-label {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+}
+
+
+/* ==============================
+   Delete Button
+   ============================== */
+
+.delete-btn {
+    background-color: #dc2626;
+    margin-top: 10px;
+}
+
+.delete-btn:hover {
+    background-color: #b91c1c;
+}
+
+
+/* ==============================
+   Empty/Search Message
+   ============================== */
+
+.empty-message {
+    color: #666;
+    font-style: italic;
+}
+
+
+/* ==============================
+   Footer
+   ============================== */
+
+footer {
+    background-color: #1f4e78;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* ==============================
+   Responsive Design
+   ============================== */
+
+@media (max-width: 600px) {
+    header {
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 0 12px;
+    }
+
+    .section-card {
+        padding: 20px;
+    }
+
+    #note-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #note-form button {
+        width: 100%;
+    }
+}
